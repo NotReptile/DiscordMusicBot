@@ -4,13 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e2b68c6-0701-4fd1-98f0-54c6b12949d5" name="Changes" comment="">
+    <list default="true" id="7e2b68c6-0701-4fd1-98f0-54c6b12949d5" name="Changes" comment="initial commit">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/Listeners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/MainDisocrdBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/MainDisocrdBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/cmd/commands/Ping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/cmd/commands/Ping.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,8 +39,17 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/JavaLibs/EasyCommands-master.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.34827587",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -38,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681422669726</updated>
-      <workItem from="1681422670937" duration="2000" />
+      <workItem from="1681422670937" duration="6259000" />
     </task>
     <servers />
   </component>
