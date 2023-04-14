@@ -1,38 +1,40 @@
 package Reptile.DiscordMusicBot;
 
-import org.jetbrains.annotations.Nullable;
+import net.dv8tion.jda.api.entities.Guild;
+import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
+import net.dv8tion.jda.api.events.session.ReadyEvent;
+import net.dv8tion.jda.api.hooks.ListenerAdapter;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CommandManager {
+public class CommandManager extends ListenerAdapter {
     private final List<ICommand> commands = new ArrayList<>();
-
-    public CommandManager(){
-
-    }
-    public void addCommand(ICommand command){
-        boolean nameFound = this.commands.stream().anyMatch((it)
-                -> it.getName().equalsIgnoreCase(command.getName()));
-        if (nameFound){
-            throw new IllegalArgumentException("A command with this name is already exist");
-        }
-
-        commands.add(command);
-    }
-    public List<ICommand> getCommands(){return commands;}
-
-    @Nullable
-    public ICommand getCommand(String search){
-        String searchLower = search.toLowerCase();
-
-        for (ICommand command : this.commands){
-            if (command.getName().equals(searchLower)){
-                return command;
+    @Override
+    public void onReady(@NotNull ReadyEvent event) {
+        for(Guild guild : event.getJDA().getGuilds()) {
+            for(ICommand command : commands) {
+                if(command.getOptions() == null) {
+                    guild.upsertCommand(command.getName(), command.getDescription()).queue();
+                } else {
+                    guild.upsertCommand(command.getName(), command.getDescription()).addOptions(command.getOptions()).queue();
+                }
             }
         }
+    }
 
-        return null;
+    @Override
+    public void onSlashCommandInteraction(@NotNull SlashCommandInteractionEvent event) {
+        for(ICommand command : commands) {
+            if(command.getName().equals(event.getName())) {
+                command.execute(event);
+                return;
+            }
+        }
+    }
+    public void add(ICommand command) {
+        commands.add(command);
     }
 
 }
