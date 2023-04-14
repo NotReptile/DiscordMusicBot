@@ -46,7 +46,7 @@ public class Listeners extends ListenerAdapter {
             case "glow":
                 playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=1TOSiJZX5rw");
             case "temp":
-                event.reply("I don't know what to add").queue();
+                event.reply("Кто нажал тот лох :index_pointing_at_the_viewer: ").queue();
             default:
                 event.reply("Is it even possible?");
         }

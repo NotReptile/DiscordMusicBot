@@ -37,7 +37,7 @@ public class MusicButtons implements ICommand {
         embedBuilder.setImage("attachment://Horosh.png");
         Button ad = Button.danger("ad", "AfterDark");
         Button time = Button.danger("glow", "Glow");
-        Button temp = Button.danger("temp", "IDK");
+        Button temp = Button.danger("temp", "НАЖМИ МЕНЯ");
 
         MessageEditData message = new MessageEditBuilder()
                 .setEmbeds(embedBuilder.build())
