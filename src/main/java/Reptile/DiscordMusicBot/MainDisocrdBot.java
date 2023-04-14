@@ -1,5 +1,6 @@
 package Reptile.DiscordMusicBot;
 
+import Reptile.DiscordMusicBot.buttons.MrKitty;
 import Reptile.DiscordMusicBot.buttons.MusicButtons;
 import Reptile.DiscordMusicBot.cmd.commands.music.*;
 import net.dv8tion.jda.api.JDABuilder;
@@ -14,6 +15,7 @@ public class MainDisocrdBot {
         CommandManager commandManager = new CommandManager();
         //buttons
         commandManager.add(new MusicButtons());
+        commandManager.add(new MrKitty());
         //music
         commandManager.add(new NowPlaying());
         commandManager.add(new Pause());
@@ -32,7 +34,10 @@ public class MainDisocrdBot {
                 )
                 .disableCache(EnumSet.of(
                         CacheFlag.CLIENT_STATUS,
-                        CacheFlag.ACTIVITY
+                        CacheFlag.ACTIVITY,
+                        CacheFlag.EMOJI,
+                        CacheFlag.STICKER,
+                        CacheFlag.SCHEDULED_EVENTS
                 ))
                 .enableCache(CacheFlag.VOICE_STATE)
                 .addEventListeners(new Listeners())

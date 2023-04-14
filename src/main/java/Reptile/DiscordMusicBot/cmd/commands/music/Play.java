@@ -59,11 +59,7 @@ public class Play implements ICommand {
             link = "ytsearch:" + link + " audio";
         }
         PlayerManager playerManager = PlayerManager.getInstance();
-        if (isUrl(link))
-            playerManager.loadAndPlay(event.getChannel().asTextChannel(),link);
-        else
-            playerManager.loadAndPlay(event.getChannel().asTextChannel(),link);
-
+        playerManager.loadAndPlay(event.getChannel().asTextChannel(),link);
     }
     private boolean isUrl(String input) {
         try {

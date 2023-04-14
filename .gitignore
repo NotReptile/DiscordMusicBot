@@ -1,2 +1,5 @@
 .env
 src/main/resources/Horosh.png
+src/main/resources/kitty.jpg
+src/main/java/Reptile/DiscordMusicBot/buttons/MrKitty.java
+src/main/java/Reptile/DiscordMusicBot/ButtonsListener.java

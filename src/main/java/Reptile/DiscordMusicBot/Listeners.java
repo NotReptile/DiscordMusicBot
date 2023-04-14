@@ -12,7 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Listeners extends ListenerAdapter {
-    PlayerManager playerManager = new PlayerManager();
+    PlayerManager playerManager = PlayerManager.getInstance();
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Listeners.class);
     @Override
@@ -22,13 +22,34 @@ public class Listeners extends ListenerAdapter {
 
     @Override
     public void onButtonInteraction(@NotNull ButtonInteractionEvent event) {
-
-        if (event.getButton().getId().equals("ad")){
-            playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=sVx1mJDeUjY");
-        } else if (event.getButton().getId().equals("time")){
-            playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=fUDrpLp5gUo&list=PLDb_G8HX8POTRWg-qc6khXKMXAMOd1WLb");
-        } else if (event.getButton().getId().equals("temp")){
-            event.reply("Testing::temp").queue();
+        Member self = event.getGuild().getSelfMember();
+        GuildVoiceState selfVoiceState = self.getVoiceState();
+        Member member = event.getMember();
+        GuildVoiceState memberVoiceState = member.getVoiceState();
+        if (!selfVoiceState.inAudioChannel()) {
+            event.getGuild().getAudioManager().openAudioConnection(memberVoiceState.getChannel());
         }
+
+        switch (event.getButton().getId()){
+            case "i1":
+                playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=fUDrpLp5gUo");
+            case "i2":
+                playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=IjjUQVCvngM");
+            case "i3":
+                playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=snuZtrAIb3g");
+            case "i4":
+                playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=MQF4DQz-UEQ");
+            case "i5":
+                playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=2hLHfOiFlr8");
+            case "ad":
+                playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=sVx1mJDeUjY");
+            case "glow":
+                playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=1TOSiJZX5rw");
+            case "temp":
+                event.reply("I don't know what to add").queue();
+            default:
+                event.reply("Is it even possible?");
+        }
+
     }
 }

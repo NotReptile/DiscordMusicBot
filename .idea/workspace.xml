@@ -4,29 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e2b68c6-0701-4fd1-98f0-54c6b12949d5" name="Changes" comment="added ICommand">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/buttons/MusicButtons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/cmd/commands/music/NowPlaying.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/cmd/commands/music/Pause.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/cmd/commands/music/Play.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/cmd/commands/music/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/cmd/commands/music/Repeat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/cmd/commands/music/Resume.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/cmd/commands/music/Skip.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/cmd/commands/music/Stop.java" afterDir="false" />
+    <list default="true" id="7e2b68c6-0701-4fd1-98f0-54c6b12949d5" name="Changes" comment="Bot is almost complete">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/CommandManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/Listeners.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/MainDisocrdBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/MainDisocrdBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/cmd/commands/Ping.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/lavaplayer/AudioPlayerSendHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/lavaplayer/AudioPlayerSendHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/lavaplayer/GuildMusicManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/lavaplayer/GuildMusicManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/lavaplayer/PlayerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/lavaplayer/PlayerManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/lavaplayer/TrackScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/lavaplayer/TrackScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/buttons/MusicButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/buttons/MusicButtons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/cmd/commands/music/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/cmd/commands/music/Play.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +90,7 @@
       <updated>1681422669726</updated>
       <workItem from="1681422670937" duration="6259000" />
       <workItem from="1681466011811" duration="4270000" />
-      <workItem from="1681470669383" duration="16389000" />
+      <workItem from="1681470669383" duration="23588000" />
     </task>
     <task id="LOCAL-00001" summary="added ICommand">
       <created>1681470545322</created>
@@ -115,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681470545322</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Bot is almost complete">
+      <created>1681487592312</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681487592312</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +114,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added ICommand" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ICommand" />
+    <MESSAGE value="Bot is almost complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bot is almost complete" />
   </component>
 </project>

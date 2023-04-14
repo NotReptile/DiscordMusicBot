@@ -36,7 +36,7 @@ public class MusicButtons implements ICommand {
         embedBuilder.setDescription("Choose what to listen");
         embedBuilder.setImage("attachment://Horosh.png");
         Button ad = Button.danger("ad", "AfterDark");
-        Button time = Button.danger("time", "TIME");
+        Button time = Button.danger("glow", "Glow");
         Button temp = Button.danger("temp", "IDK");
 
         MessageEditData message = new MessageEditBuilder()
