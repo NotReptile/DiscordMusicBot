@@ -33,22 +33,31 @@ public class Listeners extends ListenerAdapter {
         switch (event.getButton().getId()){
             case "i1":
                 playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=fUDrpLp5gUo");
+                break;
             case "i2":
                 playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=IjjUQVCvngM");
+                break;
             case "i3":
                 playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=snuZtrAIb3g");
+                break;
             case "i4":
                 playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=MQF4DQz-UEQ");
+                break;
             case "i5":
                 playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=2hLHfOiFlr8");
+                break;
             case "ad":
                 playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=sVx1mJDeUjY");
+                break;
             case "glow":
                 playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=1TOSiJZX5rw");
+                break;
             case "temp":
                 event.reply("Кто нажал тот лох :index_pointing_at_the_viewer: ").queue();
+                break;
             default:
                 event.reply("Is it even possible?");
+                break;
         }
 
     }
