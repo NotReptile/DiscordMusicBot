@@ -7,7 +7,7 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 public class BotGpt extends ListenerAdapter {
     private final OpenAI openai = new OpenAI(Config.get("OPENAI"));
-    private final String channelId = "1093271290799980614";
+    private final String channelId = "channel-id";
 
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
