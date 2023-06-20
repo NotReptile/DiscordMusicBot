@@ -29,35 +29,37 @@ public class Listeners extends ListenerAdapter {
         if (!selfVoiceState.inAudioChannel()) {
             event.getGuild().getAudioManager().openAudioConnection(memberVoiceState.getChannel());
         }
-
-        switch (event.getButton().getId()){
-            case "i1":
-                playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=fUDrpLp5gUo");
-                break;
-            case "i2":
-                playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=IjjUQVCvngM");
-                break;
-            case "i3":
-                playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=snuZtrAIb3g");
-                break;
-            case "i4":
-                playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=MQF4DQz-UEQ");
-                break;
-            case "i5":
-                playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=2hLHfOiFlr8");
-                break;
-            case "ad":
-                playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=sVx1mJDeUjY");
-                break;
-            case "glow":
-                playerManager.loadAndPlay(event.getChannel().asTextChannel(),"https://www.youtube.com/watch?v=1TOSiJZX5rw");
-                break;
-            case "temp":
-                event.reply("Кто нажал тот лох :index_pointing_at_the_viewer: ").queue();
-                break;
-            default:
-                event.reply("Is it even possible?");
-                break;
+        switch (event.getButton().getId()) {
+            case "i1" -> {
+                playerManager.loadAndPlay(event.getChannel().asTextChannel(), "https://www.youtube.com/watch?v=fUDrpLp5gUo");
+                event.reply("Added **Mr.Kitty - XIII** to the queue").queue();
+            }
+            case "i2" -> {
+                playerManager.loadAndPlay(event.getChannel().asTextChannel(), "https://www.youtube.com/watch?v=IjjUQVCvngM");
+                event.reply("Added **Mr.Kitty - Rats** to the queue").queue();
+            }
+            case "i3" -> {
+                playerManager.loadAndPlay(event.getChannel().asTextChannel(), "https://www.youtube.com/watch?v=snuZtrAIb3g");
+                event.reply("Added **Mr.Kitty - Hollow** to the queue").queue();
+            }
+            case "i4" -> {
+                playerManager.loadAndPlay(event.getChannel().asTextChannel(), "https://www.youtube.com/watch?v=MQF4DQz-UEQ");
+                event.reply("Added **Mr.Kitty - Devour** to the queue").queue();
+            }
+            case "i5" -> {
+                playerManager.loadAndPlay(event.getChannel().asTextChannel(), "https://www.youtube.com/watch?v=2hLHfOiFlr8");
+                event.reply("Added **Mr.Kitty - Neglect** to the queue").queue();
+            }
+            case "ad" -> {
+                playerManager.loadAndPlay(event.getChannel().asTextChannel(), "https://www.youtube.com/watch?v=sVx1mJDeUjY");
+                event.reply("Added **Mr.Kitty - After Dark** to the queue").queue();
+            }
+            case "glow" -> {
+                playerManager.loadAndPlay(event.getChannel().asTextChannel(), "https://www.youtube.com/watch?v=1TOSiJZX5rw");
+                event.reply("Added **Mr.Kitty - Glow** to the queue").queue();
+            }
+            case "temp" -> event.reply("Why?").queue();
+            default -> event.reply("Is it even possible?");
         }
 
     }

@@ -1,7 +1,3 @@
 .env
-src/main/resources/Horosh.png
-src/main/resources/kitty.jpg
-src/main/java/Reptile/DiscordMusicBot/buttons/MrKitty.java
-src/main/java/Reptile/DiscordMusicBot/ButtonsListener.java
-src/main/java/Reptile/DiscordMusicBot/gpt/BotGpt.java
-src/main/java/Reptile/DiscordMusicBot/gpt/OpenAI.java
+src/main/resources/META-INF/MANIFEST.MF
+out/artifacts/DiscordBot_jar/DiscordBot.jar

@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="DiscordBot:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e2b68c6-0701-4fd1-98f0-54c6b12949d5" name="Changes" comment="onButtonInteraction is now using Switch case instead of if else">
+    <list default="true" id="7e2b68c6-0701-4fd1-98f0-54c6b12949d5" name="Changes" comment="added break to cases">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/DiscordBot_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/Listeners.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/MainDisocrdBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/MainDisocrdBot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/buttons/MusicButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/buttons/MusicButtons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/cmd/commands/music/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/cmd/commands/music/Play.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/lavaplayer/AudioPlayerSendHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/lavaplayer/AudioPlayerSendHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/lavaplayer/PlayerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reptile/DiscordMusicBot/lavaplayer/PlayerManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,26 +45,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/igore/IdeaProjects/DiscordBot",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.34827587",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/igore/OneDrive/Рабочий стол/ALL/Java4Sem-main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.34827587&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\igore\IdeaProjects\DiscordBot\target\classes" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\igore\IdeaProjects\DiscordBot\target\classes" />
+      <recent name="C:\Users\igore\IdeaProjects\DiscordBot\target\classes\src\main\java" />
+      <recent name="C:\Users\igore\IdeaProjects\DiscordBot\target\classes\resources" />
+      <recent name="C:\Users\igore\IdeaProjects\DiscordBot\src\main\java\Reptile\DiscordMusicBot\buttons" />
       <recent name="C:\Users\igore\IdeaProjects\DiscordBot\src\main\resources" />
     </key>
   </component>
@@ -90,7 +106,26 @@
       <updated>1681422669726</updated>
       <workItem from="1681422670937" duration="6259000" />
       <workItem from="1681466011811" duration="4270000" />
-      <workItem from="1681470669383" duration="25352000" />
+      <workItem from="1681470669383" duration="27547000" />
+      <workItem from="1681558541066" duration="716000" />
+      <workItem from="1681564616954" duration="3166000" />
+      <workItem from="1681585540148" duration="1210000" />
+      <workItem from="1681647265222" duration="1484000" />
+      <workItem from="1681745530005" duration="1270000" />
+      <workItem from="1681823196958" duration="1082000" />
+      <workItem from="1681843235155" duration="1254000" />
+      <workItem from="1681925954439" duration="2431000" />
+      <workItem from="1682191470821" duration="8697000" />
+      <workItem from="1682364422693" duration="14000" />
+      <workItem from="1682536520165" duration="29000" />
+      <workItem from="1682541357610" duration="3095000" />
+      <workItem from="1682619098999" duration="1199000" />
+      <workItem from="1682628965977" duration="6000" />
+      <workItem from="1683103824995" duration="610000" />
+      <workItem from="1684078130319" duration="102000" />
+      <workItem from="1685466951190" duration="117000" />
+      <workItem from="1687300128711" duration="94000" />
+      <workItem from="1687301948326" duration="304000" />
     </task>
     <task id="LOCAL-00001" summary="added ICommand">
       <created>1681470545322</created>
@@ -113,7 +148,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681501564621</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="new dependency">
+      <created>1681503032389</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681503032389</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added break to cases">
+      <created>1681503379265</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681503379265</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +172,8 @@
     <MESSAGE value="added ICommand" />
     <MESSAGE value="Bot is almost complete" />
     <MESSAGE value="onButtonInteraction is now using Switch case instead of if else" />
-    <option name="LAST_COMMIT_MESSAGE" value="onButtonInteraction is now using Switch case instead of if else" />
+    <MESSAGE value="new dependency" />
+    <MESSAGE value="added break to cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="added break to cases" />
   </component>
 </project>

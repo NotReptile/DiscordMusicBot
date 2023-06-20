@@ -13,34 +13,39 @@ import net.dv8tion.jda.api.utils.messages.MessageEditData;
 import java.io.File;
 import java.util.List;
 
-public class MusicButtons implements ICommand {
+public class MrKitty implements ICommand {
     @Override
     public String getName() {
-        return "based";
+        return "kitty";
     }
 
     @Override
     public String getDescription() {
-        return "Buttons for some frequently listened tracks";
+        return "buttons for MrKitty tracks";
     }
 
     @Override
     public List<OptionData> getOptions() {
         return null;
     }
+
+    //File file = new File("src/main/resources/kitty.jpg");
+
     @Override
     public void execute(SlashCommandInteractionEvent event) {
         EmbedBuilder embedBuilder = new EmbedBuilder();
-        embedBuilder.setTitle("BASED");
-        embedBuilder.setDescription("Choose what to listen");
-        //embedBuilder.setImage("attachment://Horosh.png");
-        Button ad = Button.danger("ad", "AfterDark");
-        Button time = Button.danger("glow", "Glow");
-        Button temp = Button.danger("temp", "Dont");
+        embedBuilder.setTitle("MR.KITTY");
+        embedBuilder.setDescription("Best mister, but only after Prekol");
+
+        Button xiii = Button.danger("i1", "XIII");
+        Button rats = Button.danger("i2", "Rats");
+        Button hollow = Button.danger("i3", "Hollow");
+        Button devour = Button.danger("i4", "Devour");
+        Button neglect = Button.danger("i5", "Neglect");
 
         MessageEditData message = new MessageEditBuilder()
                 .setEmbeds(embedBuilder.build())
-                .setActionRow(ad,time,temp)
+                .setActionRow(xiii,rats,hollow,devour,neglect)
                 .build();
         MessageCreateData.fromEditData(message);
         event.reply(MessageCreateData.fromEditData(message)).queue();
